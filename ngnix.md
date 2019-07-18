@@ -1,5 +1,6 @@
 
-####How To Install and configure Nginx
+###How To Install and configure Nginx
+
 
 ```
 sudo apt-get update
@@ -84,3 +85,9 @@ restart nginx so we get our app running
 ```
 sudo systemctl restart nginx
 ```
+
+For future deploys only replace code using
+```
+scp -r * 0.0.0.0:/var/www/sample-app-master
+```
+Incase of major changes restart ngnix
