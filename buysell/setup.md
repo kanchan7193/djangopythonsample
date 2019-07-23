@@ -22,13 +22,19 @@ python3 manage.py test polls
 
 using coverage
 pip3 install coverage
-coverage run manage.py test polls
+coverage run --source='.' manage.py test polls
 coverage html 
 
 
 
 to install all dependendecies 
 pip3 install -r requirement.txt
+
+Regular templated ui with Django -
+http://127.0.0.1:8000/polls
+
+Django API 
+http://127.0.0.1:8000/polls/api/
 
 ####Contributor
 * Kanchan
