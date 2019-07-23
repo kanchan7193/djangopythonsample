@@ -14,8 +14,21 @@ python3 manage.py runserver
 mysql -u root
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
 create database buysell
-
 ```
+
+
+default way of running unit tests
+python3 manage.py test polls
+
+using coverage
+pip3 install coverage
+coverage run manage.py test polls
+coverage html 
+
+
+
+to install all dependendecies 
+pip3 install -r requirement.txt
 
 ####Contributor
 * Kanchan
